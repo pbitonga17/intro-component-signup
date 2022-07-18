@@ -55,6 +55,7 @@ html {
     background-color: hsl(248, 32%, 49%);
     border: 1px solid hsl(248, 32%, 49%);
     border-radius: 10px;
+    -webkit-appearance: none;
 }
 .bold {
     font-weight: 700;
