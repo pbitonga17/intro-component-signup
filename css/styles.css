@@ -1,0 +1,124 @@
+/*font-family: 'Poppins', sans-serif;*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    display: grid;
+    gap: 4rem;
+    margin: 5vw;
+}
+.main__text {
+    color: white;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+.heading {
+    font-size: 3rem;
+}
+.prgrph {
+    font-size: 16px;
+    line-height: 2.5rem;
+}
+
+.main__trial-input {
+    display: grid;
+    gap: 1.5rem;
+}
+/* --------- BUTTON --------- */
+.btn {
+    padding: 2rem 7rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: white;
+
+    background-color: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 10px;
+}
+.bold {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* --------- INPUT --------- */
+form {
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    gap: 1px;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 20px;
+    border-radius: 10px;
+}
+#submit {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.fname-warning,
+.lname-warning,
+.email-warning,
+.pssword-warning {
+    text-align: right;
+    color: red;
+    font-size: 10px;
+    font-style: italic;
+    display: none;
+}
+
+/* --------- MEDIA Q --------- */
+@media screen and (min-width: 1440px) {
+    html {
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        margin: 0 12vw;
+    }
+    .main__text {
+        text-align: left;
+    }
+    .heading {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .btn {
+        width: 100%;
+        cursor: pointer;
+    }
+    form {
+        padding: 2.5vw;
+        width: 50rem;
+    }
+    #submit {
+        cursor: pointer;
+    }
+}

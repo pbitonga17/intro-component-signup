@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Intro component with sign-up form</title>
 </head>
 <body>
-    
+    <main class="main">
+        <section class="main__text">
+            <h1 class="heading">Learn to code by watching others</h1>
+            <p class="prgrph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </section>
+        <section class="main__trial-input">
+            <div class="trial">
+                <button class="btn">
+                    <span class="bold">Try it free 7 days</span> then $20/mo. thereafter.
+                </button>
+            </div>
+            <div class="input">
+                <form action="">
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    <span class="fname-warning">First Name cannot be empty</span>
+                    <br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    <span class="lname-warning">Last Name cannot be empty</span>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <span class="email-warning">Looks like this is not an email</span>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="pssword-warning">Password cannot be empty</span>
+                    <br>
+
+                    <input type="submit" id="submit" name="submit" value="CLAIM YOUR FREE TRIAL">
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!--J A V A S C R I P T-->
     <script src="./js/index.js"></script>
